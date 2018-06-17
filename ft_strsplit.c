@@ -6,10 +6,11 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 10:03:16 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/05/31 07:35:45 by mmbatha          ###   ########.fr       */
+/*   Updated: 2018/06/13 09:21:42 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static int				ft_occurs(char c, char *str)
@@ -32,6 +33,8 @@ static char				*ft_get_word(char *str, char *character)
 	while (!ft_occurs(str[len], character) && str[len] != '\0')
 		len++;
 	word = (char *)malloc(sizeof(char) * (len + 1));
+	if (word == NULL)
+		return (NULL);
 	word[len] = '\0';
 	while (len--)
 		word[len] = str[len];
@@ -54,6 +57,8 @@ static char				**ft_add_word_to_list(char *word, char **list)
 	char	**templist;
 
 	templist = (char **)malloc(sizeof(char *) * (ft_slength(list) + 2));
+	if (templist == NULL)
+		return (NULL);
 	i = 0;
 	while (list != NULL && list[i] != NULL)
 	{

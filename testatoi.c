@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/28 14:13:25 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/06/16 17:51:28 by mmbatha          ###   ########.fr       */
+/*   Created: 2018/06/14 11:06:45 by mmbatha           #+#    #+#             */
+/*   Updated: 2018/06/15 16:20:49 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "libft1/libft.h"
 
-char			*ft_strdup(const char *str1)
+int			main(int argc, char **argv)
 {
-	int		i;
-	size_t	length;
-	char	*str2;
+	char str[20];
+	int val;
 
-	i = 0;
-	length = ft_strlen(str1);
-	str2 = (char *)malloc(sizeof(char) * (length + 1));
-	if (str2 == NULL)
-	{
-		return (NULL);
-	}
-	while (str1[i])
-	{
-		str2[i] = str1[i];
-		i++;
-	}
-	str2[i] = '\0';
-	return (str2);
+	ft_putendl("|******ft_atoi.c******|");
+	ft_strcpy(str, argv[1]);
+	val = atoi(argv[1]);
+	printf("String value (atoi) = %s, Int value = %i\n", str, val);
+	val = ft_atoi(argv[1]);
+	printf("String value (ft_atoi) = %s, Int value = %i\n", str, val);
+
+	return (0);
 }

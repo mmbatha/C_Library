@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/28 14:13:25 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/06/16 17:51:28 by mmbatha          ###   ########.fr       */
+/*   Created: 2018/06/14 11:06:45 by mmbatha           #+#    #+#             */
+/*   Updated: 2018/06/17 10:48:09 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "libft.h"
+#include <stdio.h>
+#include <string.h>
+#include "libft1/libft.h"
 
-char			*ft_strdup(const char *str1)
+int			main(int argc, char **argv)
 {
+	char	**list;
+	char	str[26];
 	int		i;
-	size_t	length;
-	char	*str2;
+	int		len;
 
-	i = 0;
-	length = ft_strlen(str1);
-	str2 = (char *)malloc(sizeof(char) * (length + 1));
-	if (str2 == NULL)
+	if (argc == 3)
 	{
-		return (NULL);
+		ft_strcpy(str, argv[1]);
+		
+		ft_putendl("\n|******ft_strsplit******|");
+
+		list = ft_strsplit(str, argv[2][0]);
+		len = sizeof(list)/sizeof(list[0]);
+		i = 0;
+		while (i < 4)
+		{
+			ft_putendl(list[i]);
+			i++;
+		}
 	}
-	while (str1[i])
-	{
-		str2[i] = str1[i];
-		i++;
-	}
-	str2[i] = '\0';
-	return (str2);
+	return (0);
 }

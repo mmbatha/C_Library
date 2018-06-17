@@ -6,7 +6,7 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/27 10:49:52 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/05/31 16:36:05 by mmbatha          ###   ########.fr       */
+/*   Updated: 2018/06/05 14:37:15 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void			ft_putendl(char const *str)
 {
-	ft_putstr(str);
-	ft_putchar('\n');
+	if (str)
+	{
+		ft_putstr(str);
+		ft_putchar('\n');
+	}
 }

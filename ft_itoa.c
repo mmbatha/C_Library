@@ -6,10 +6,11 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 08:09:16 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/05/31 07:49:43 by mmbatha          ###   ########.fr       */
+/*   Updated: 2018/06/11 11:17:26 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static void			itoa_negate(int *num, int *neg)

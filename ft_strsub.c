@@ -6,10 +6,11 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 10:12:40 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/05/30 15:36:11 by mmbatha          ###   ########.fr       */
+/*   Updated: 2018/06/05 14:25:39 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char			*ft_strsub(char const *str, unsigned int start, size_t len)
@@ -21,6 +22,8 @@ char			*ft_strsub(char const *str, unsigned int start, size_t len)
 	if ((int)len < 0)
 		return (NULL);
 	sub = (char *)malloc(sizeof(char) * (len + 1));
+	if (sub == NULL)
+		return (NULL);
 	if (str != NULL && len != 0 && sub)
 	{
 		if (!sub)

@@ -6,7 +6,7 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/27 11:44:57 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/06/04 11:17:23 by mmbatha          ###   ########.fr       */
+/*   Updated: 2018/06/11 12:35:23 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int				ft_strncmp(const char *str1, const char *str2, size_t size)
 	{
 		return (0);
 	}
-	while ((*str1 || *str2) && *str1 && size)
+	while ((*str1 || *str2) && ++i < size)
 	{
 		if (*str1 != *str2)
 		{
