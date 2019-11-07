@@ -6,11 +6,13 @@
 /*   By: mmbatha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 14:52:42 by mmbatha           #+#    #+#             */
-/*   Updated: 2018/06/04 16:05:21 by mmbatha          ###   ########.fr       */
+/*   Updated: 2019/11/07 17:30:44 by mmbatha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdlib.h>
 
 static void			ft_strcmptest(void)
 {
