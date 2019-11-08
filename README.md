@@ -3,19 +3,25 @@ This project is a recreation of the C standard library. Used for future WeThinkC
 
 # Getting started
 Run 'make'
+
 `$ make`
+
 This will compile all the functions into a `libft.a` library
 
 Compile the included `main.c` file or create your own
+
 `$ gcc -Werror -Wall -Wextra main.c -o main libft.a`
 
 Run the `main` progam created
+
 `$ ./main`
 
 If all goes well, you should see an output comparing the C standard library functions with the ones found here, e.g.:
 
 ``|******ft_atoi******|``
+
 `String value = 98993489, Int value = 98993489`
+
 `String value = tutorialspoint.com, Int value = 0`
 
 |******ft_memcmp******|
