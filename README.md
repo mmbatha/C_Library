@@ -14,7 +14,7 @@ Run the `main` progam created
 
 If all goes well, you should see an output comparing the C standard library functions with the ones found here, e.g.:
 
-# |******ft_atoi******|
+``|******ft_atoi******|``
 `String value = 98993489, Int value = 98993489`
 `String value = tutorialspoint.com, Int value = 0`
 
