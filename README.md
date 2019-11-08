@@ -18,75 +18,104 @@ Run the `main` progam created
 
 If all goes well, you should see an output comparing the C standard library functions with the ones found here, e.g.:
 
-``|******ft_atoi******|``
+`|******ft_atoi******|`
+
 `String value = 98993489, Int value = 98993489`
+
 `String value = tutorialspoint.com, Int value = 0`
 
 `|******ft_memcmp******|`
 
 `str2 is less than str1`
 
-|******ft_memcpy******|
-Before memcpy dest = Helloooo!!
-After memcpy dest = http://www.tutorialspoint.com
+`|******ft_memcpy******|`
 
-|******ft_putchar******|
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
+`Before memcpy dest = Helloooo!!`
 
-|******ft_putchar_fd******|
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
+`After memcpy dest = http://www.tutorialspoint.com`
 
-|******ft_putendl******|
-Silence! I kill you!
+`|******ft_putchar******|`
 
-|******ft_putendl_fd******|
-TESTED HERE!
+`ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-|******ft_putstr******|
-tutorialspoint
+`|******ft_putchar_fd******|`
 
-|******ft_putstr_fd******|
-tutorialspoint
+`ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-|******ft_strclr******|
+`|******ft_putendl******|`
 
-String before strclr: tutorialspoint
-String after strclr: 
+`Silence! I kill you!`
 
-|******ft_strdup******|
-Final duplicated string: Tutorials Point
+`|******ft_putendl_fd******|`
 
-|******ft_strncmp******|
-str2 is less than str1
+`TESTED HERE!`
 
-|******ft_strncpy******|
-Final copied string: This is tu
+`|******ft_putstr******|`
 
-|******ft_strsplit******|
-hello
-fellow
-students
+`tutorialspoint`
 
-|******ft_strsub******|
-Hello
+`|******ft_putstr_fd******|`
 
-|******ft_memccpy******|
-After memccpy buff2 = string with�mnopqrstuvwxyz
-After ft_memccpy buff1 = string with�mnopqrstuvwxyz
+`tutorialspoint`
 
-|******ft_strlcat******|
-ft_strlcat's buff: there is no stars in the sky
-strlcat's buff: there is no stars in the sky
+`|******ft_strclr******|`
 
-|******ft_memmove******|
-Before memmove dest1 = oldstring, src = newstring
-After memmove dest1 = newstring, src = newstring
-After ft_memmove dest2 = newstring, src = newstring
+`String before strclr: tutorialspoint`
 
-|******ft_strstr******|
-The strstr substring is: MZIRIBMZP
-The ft_strstr substring is: MZIRIBMZP
+`String after strclr: `
 
-|******ft_strcmp******|
-|1|
-|1|
+`|******ft_strdup******|`
+
+`Final duplicated string: Tutorials Point`
+
+`|******ft_strncmp******|`
+
+`str2 is less than str1`
+
+`|******ft_strncpy******|`
+
+`Final copied string: This is tu`
+
+`|******ft_strsplit******|`
+
+`hello`
+
+`fellow`
+
+`students`
+
+`|******ft_strsub******|`
+
+`Hello`
+
+`|******ft_memccpy******|`
+
+`After memccpy buff2 = string with�mnopqrstuvwxyz`
+
+`After ft_memccpy buff1 = string with�mnopqrstuvwxyz`
+
+`|******ft_strlcat******|`
+
+`ft_strlcat's buff: there is no stars in the sky`
+
+`strlcat's buff: there is no stars in the sky`
+
+`|******ft_memmove******|`
+
+`Before memmove dest1 = oldstring, src = newstring`
+
+`After memmove dest1 = newstring, src = newstring`
+
+`After ft_memmove dest2 = newstring, src = newstring`
+
+`|******ft_strstr******|`
+
+`The strstr substring is: MZIRIBMZP`
+
+`The ft_strstr substring is: MZIRIBMZP`
+
+`|******ft_strcmp******|`
+
+`|1|`
+
+`|1|`
